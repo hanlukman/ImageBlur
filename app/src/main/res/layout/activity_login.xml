@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/nhgksk"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorTxt"
+        >
+
+        <TextView
+            android:id="@+id/lgnEmailKet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Email"
+            android:textSize="30sp"></TextView>
+
+        <EditText
+            android:id="@+id/lgnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lgnEmailKet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"></EditText>
+
+        <TextView
+            android:id="@+id/lgnPassKet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lgnEmail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Password"
+            android:textSize="30sp"></TextView>
+
+        <EditText
+            android:id="@+id/lgnPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lgnPassKet"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"></EditText>
+
+        <Button
+            android:id="@+id/lgnBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lgnPass"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/btnClr"
+            android:text="Login"
+            android:textColor="@color/btnTxColor"
+            android:textSize="20sp"></Button>
+
+        <TextView
+            android:id="@+id/ketLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lgnBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Or Singing With"
+            android:textSize="20sp"></TextView>
+
+        <ImageView
+            android:id="@+id/fbLogin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ketLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/facebook">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ggLogin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ketLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/fbLogin"
+            android:src="@drawable/search">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/lgnDontHave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fbLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Don't Have Account?"
+            android:textSize="20sp"></TextView>
+    </RelativeLayout>
+
+</RelativeLayout>
